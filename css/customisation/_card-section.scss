@@ -1,13 +1,8 @@
 .card-section .section-card {
     background-color: $white;
     text-align: center;
-    padding-top: 160px;
-    padding-bottom: 120px;
+    padding: 160px 50px 100px 50px;
     margin: 0 auto;
-    
-    &:first-of-type {
-        margin-top: -500px;
-    }
     
     .title {
         margin-bottom: 100px;
@@ -35,6 +30,20 @@
         text-align: justify;
         font-weight: 500;
         line-height: 2.5em;
+        
+        p {
+            margin-bottom: 80px;
+        }
+        
+        .quote {
+            color: $primary;
+            border-left: 3px solid $primary;
+            padding-left: 30px;
+        }
     }
     
+}
+
+#handmade.card-section {
+    margin-top: -500px;
 }
