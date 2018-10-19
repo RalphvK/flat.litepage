@@ -1,0 +1,29 @@
+section#hero {
+    
+    color: $hero-text-color;
+    text-align: center;
+    padding: 0 60px;
+    
+    .background {
+        background-color: rgba(black, 0.1);
+        padding-top: 200px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 500px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 1.4em;
+        font-weight: 500;
+        color: mix($hero-text-color, $body-base-color, 80);
+        
+        .highlight { color: $hero-text-color; }
+
+    }
+
+}

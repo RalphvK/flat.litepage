@@ -1,0 +1,24 @@
+@mixin linearGradient($top, $bottom, $direction: to bottom, $stop1: 0%, $stop2: 100%){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top $stop1, $bottom $stop2); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop($stop1,$top), color-stop($stop2,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top $stop1,$bottom $stop2); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top $stop1,$bottom $stop2); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top $stop1,$bottom $stop2); /* IE10+ */
+    background: linear-gradient(to bottom,  $top $stop1,$bottom $stop2); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradient($start-color, $end-color, $orientation) {
+    background: $start-color;
+    @if $orientation == 'vertical' {
+      background: -webkit-linear-gradient(top, $start-color, $end-color);
+      background: linear-gradient(to bottom, $start-color, $end-color);
+    } @else if $orientation == 'horizontal' {
+      background: -webkit-linear-gradient(left, $start-color, $end-color);
+      background: linear-gradient(to right, $start-color, $end-color);
+    } @else {
+      background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+      background: radial-gradient(ellipse at center, $start-color, $end-color);
+    }
+  }

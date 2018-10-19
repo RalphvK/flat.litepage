@@ -1,0 +1,58 @@
+nav {
+    
+    line-height: 70px;
+    vertical-align: middle;
+    padding: 40px 30px 25px 30px;
+
+    img.logo {
+        padding: 0 30px;
+        height: 35px;
+        display: inline-block;
+    }
+    
+    ul.menu {
+        float: right;
+        display: inline-block;
+        
+        li {
+            display: inline-block;
+            list-style: none;
+
+            a {
+                display: block;
+                padding: 0 30px;
+                font-weight: 600;
+                color: $hero-text-color;
+                text-transform: uppercase;
+                font-size: 0.8em;
+                letter-spacing: 1px;
+                border-radius: $border-radius-rounded;
+                
+                &:hover {
+                    text-decoration: none;
+                    color: $primary;
+                    background-color: rgba($primary, 0.05);
+                }
+            }
+            
+            &.lang-item a {
+                display: none;
+                height: 10px;
+                &:hover {
+                    background: none;
+                }
+                img {
+                    height: 20px;
+                    opacity: 0.9;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        transform: scale(1.1);
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+    }
+    
+}

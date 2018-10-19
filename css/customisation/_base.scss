@@ -1,0 +1,11 @@
+body {
+    background-color: $body-base-color;
+    @include gradient($body-gradient..., $orientation: horizontal);
+}
+
+.vertical-line {
+    width: 2px;
+    height: 200px;
+    margin: 70px auto;
+    background-color: rgba($hero-text-color, 0.5);
+}
