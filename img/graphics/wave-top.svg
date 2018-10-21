@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x32_340d489-f41a-404c-a2be-1313b5c58e19"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 709.8"
+	 style="enable-background:new 0 0 1920 709.8;" xml:space="preserve" preserveAspectRatio="none">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<title>wave-bottom</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1" y1="357.08" x2="1920.96" y2="357.08" gradientTransform="matrix(1 0 0 1 -1 -2.16)">
+	<stop  offset="0" style="stop-color:#3E45F9"/>
+	<stop  offset="1" style="stop-color:#6B55FA"/>
+</linearGradient>
+<path class="st0" d="M1920,709.8V80.3c-53.7,5.7-108.9,8.5-185.7,0c-131.2-14.6-133-41-255.2-43.5c-97-1.9-126.3,14.1-267.8,22.5
+	c-26.7,1.6-50.7,2.5-74.7,2.9c-52.8,0.9-105.2-0.6-184.2-2.9C666,50.9,698.3,27.8,593.9,39.8c-4.4,0.5-8.8,1-13.1,1.6
+	c-90.6,11.7-157.9,34-245.9,26.9c-20.1-1.7-40-4.7-59.6-9c-27.1-5.9-34.3-9.8-67-19.5C156.4,24.5,87.6,8.7,0,0v709.8H1920z"/>
+</svg>

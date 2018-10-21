@@ -6608,6 +6608,7 @@ nav {
             opacity: 1; }
 
 section#hero {
+  position: relative;
   color: white;
   text-align: center;
   padding: 0 60px; }
@@ -6626,6 +6627,10 @@ section#hero {
     color: #ccccff; }
     section#hero h3 .highlight {
       color: white; }
+
+.card-section {
+  padding-bottom: 0.01px;
+  position: relative; }
 
 .card-section .section-card {
   background-color: #fff;
@@ -6659,6 +6664,26 @@ section#hero {
 #handmade.card-section {
   margin-top: -500px; }
 
+#dynamic.card-section {
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); }
+
+#performance.card-section {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+#workflow.card-section {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("../img/graphics/curve-top.svg");
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+#features.card-section {
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)); }
+
 .card-section .feature-card {
   background-color: #fff;
   line-height: 65px;
@@ -6679,5 +6704,40 @@ section#hero {
     border: 1px solid #0000ff;
     vertical-align: middle;
     margin: 0 10px; }
+
+.scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.5; }
+  .scene .el {
+    position: absolute;
+    right: -500px;
+    height: 7px;
+    background-color: rgba(7, 239, 218, 0.2);
+    margin-top: 20px;
+    width: 500px;
+    border-radius: 2em; }
+    .scene .el.blue {
+      background: #07efda;
+      background: -webkit-linear-gradient(left, #07efda, rgba(7, 239, 218, 0));
+      background: linear-gradient(to right, #07efda, rgba(7, 239, 218, 0)); }
+    .scene .el.pink {
+      background: #f106b2;
+      background: -webkit-linear-gradient(left, #f106b2, rgba(241, 6, 178, 0));
+      background: linear-gradient(to right, #f106b2, rgba(241, 6, 178, 0)); }
+
+#particles-js {
+  position: absolute;
+  top: -200px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+  z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
-@mixin gradient($start-color, $end-color, $orientation) {
+@mixin gradient($start-color, $end-color, $orientation: horizontal) {
     background: $start-color;
     @if $orientation == 'vertical' {
       background: -webkit-linear-gradient(top, $start-color, $end-color);

@@ -1,3 +1,8 @@
+.card-section {
+    padding-bottom: 0.01px;
+    position: relative;
+}
+
 .card-section .section-card {
     background-color: $white;
     text-align: center;
@@ -46,4 +51,24 @@
 
 #handmade.card-section {
     margin-top: -500px;
+}
+
+#dynamic.card-section {
+    @include gradient(rgba($black, 0), rgba($black, 0.4), vertical);
+}
+
+#performance.card-section {
+    background-color: rgba(black,0.4);
+}
+
+#workflow.card-section {
+    background-color: rgba(black,0.4);
+    background-image: url('../img/graphics/curve-top.svg');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#features.card-section {
+    @include gradient(rgba(black,0), rgba($black, 0.2), vertical);
 }
