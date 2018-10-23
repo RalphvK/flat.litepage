@@ -6567,6 +6567,47 @@ body {
   margin: 70px auto;
   background-color: rgba(255, 255, 255, 0.5); }
 
+.small-icon {
+  height: 33px;
+  margin-right: 15px; }
+
+.display-text {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.92em; }
+
+.form-group.input-material {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .form-group.input-material label {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 7px;
+    transition: 0.1s ease all;
+    -moz-transition: 0.1s ease all;
+    -webkit-transition: 0.1s ease all; }
+  .form-group.input-material .form-control {
+    border-bottom: 2px solid #ced4da;
+    border-radius: 0px;
+    background: transparent;
+    padding-left: 5px;
+    box-shadow: none;
+    /* active state */ }
+    .form-group.input-material .form-control:focus, .form-group.input-material .form-control:valid {
+      border-bottom-color: #0000ff;
+      color: #000; }
+    .form-group.input-material .form-control:focus ~ label, .form-group.input-material .form-control:valid ~ label {
+      top: -25px;
+      font-size: 14px;
+      color: #0000ff;
+      font-weight: 500; }
+
 nav {
   line-height: 70px;
   vertical-align: middle;
@@ -6606,6 +6647,39 @@ nav {
           nav ul.menu li.lang-item a img:hover {
             transform: scale(1.1);
             opacity: 1; }
+
+footer {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 0.9em; }
+  footer a {
+    color: #3e45f9; }
+    footer a:hover {
+      color: #3e45f9; }
+  footer .credits {
+    padding-top: 300px;
+    padding-bottom: 100px; }
+    footer .credits h4 {
+      margin-bottom: 10px; }
+      footer .credits h4 img {
+        height: 1.5em;
+        margin-left: 0.4em; }
+    footer .credits p {
+      font-size: 0.8em; }
+  footer nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #111111;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 35px; }
+    footer nav img.logo {
+      opacity: 0.5; }
+    footer nav .copyright-notice {
+      font-size: 0.8em; }
+    footer nav ul.menu li a {
+      color: #3e45f9; }
+      footer nav ul.menu li a:hover {
+        color: #3e45f9; }
 
 section#hero {
   position: relative;
@@ -6679,10 +6753,26 @@ section#hero {
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
-#features.card-section {
+#contact {
   background: rgba(0, 0, 0, 0);
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)); }
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
+  #contact .container {
+    margin-bottom: -100px; }
+  #contact .section-card:first-of-type {
+    padding-bottom: 1px; }
+    #contact .section-card:first-of-type .body .contact-method {
+      display: block; }
+      #contact .section-card:first-of-type .body .contact-method:first-of-type {
+        margin-bottom: 30px; }
+      #contact .section-card:first-of-type .body .contact-method:last-of-type {
+        text-align: right; }
+        #contact .section-card:first-of-type .body .contact-method:last-of-type .small-icon {
+          margin-left: 15px;
+          margin-right: 0px; }
+  #contact #contact-form-card {
+    background-color: #eeecfa;
+    padding-top: 50px; }
 
 .card-section .feature-card {
   background-color: #fff;
@@ -6690,14 +6780,6 @@ section#hero {
   padding: 0 22px;
   color: #0000ff;
   font-size: 0.95em; }
-  .card-section .feature-card img {
-    height: 33px;
-    margin-right: 15px; }
-  .card-section .feature-card strong {
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.92em; }
   .card-section .feature-card hr {
     display: inline-block;
     width: 20px;

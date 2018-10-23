@@ -3,11 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Adversion</title>
+    <title>Litepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- render dynamic content -->
+    <script>
+        function thisYear() {
+            var year = new Date();
+            document.write(year.getFullYear());
+        }
+    </script>
+
 </head>
 
 <body>
@@ -17,7 +26,7 @@
 
         <!-- nav -->
         <nav>
-            <img class="logo" src="img/branding/logo.png" alt="Adversion logo">
+            <img class="logo" src="img/branding/logo.png" alt="Litepage logo">
             <ul class="menu">
                 <li class="lang-item"><a href="#"><img src="img/icons/gb.png" alt="English Language"></a></li>
                 <li><a href="#">About</a></li>
@@ -122,34 +131,34 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 mb-4">
                         <div class="feature-card">
-                            <img src="img/icons/euro.svg" alt="Euro">
-                            <strong>Flat Rate</strong>
+                            <img class="small-icon" src="img/icons/euro.svg" alt="Euro">
+                            <strong class="display-text">Flat Rate</strong>
                             <hr>
                             <span class="description">Betaal voor het resultaat, niet per uur.</span>
                         </div>
                     </div>
                     <div class="col-xl-6 mb-4">
                         <div class="feature-card">
-                            <img src="img/icons/mobile.svg" alt="Mobile device">
-                            <strong>Responsive</strong>
+                            <img class="small-icon" src="img/icons/mobile.svg" alt="Mobile device">
+                            <strong class="display-text">Responsive</strong>
                             <hr>
-                            <span class="description">Prachtig op mobiel, tablet & desktop.</span>
+                            <span class="description">Perfect op mobiel, tablet & desktop.</span>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-xl-6 mb-4">
                         <div class="feature-card">
-                            <img src="img/icons/fingerprint.svg" alt="Euro">
-                            <strong>Privacy By Design</strong>
+                            <img class="small-icon" src="img/icons/fingerprint.svg" alt="Euro">
+                            <strong class="display-text">Privacy By Design</strong>
                             <hr>
                             <span class="description">Efficient en eerlijk met data.</span>
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="feature-card">
-                            <img src="img/icons/mobile.svg" alt="Mobile device">
-                            <strong>Ethical Design</strong>
+                            <img class="small-icon" src="img/icons/mobile.svg" alt="Mobile device">
+                            <strong class="display-text">Ethical Design</strong>
                             <hr>
                             <span class="description">Wie goed doet, goed ontmoet.</span>
                         </div>
@@ -159,6 +168,71 @@
             </div>
         </section>
         <!-- section end -->
+
+        <!-- section start -->
+        <section id="contact" class="card-section">
+            <div class="container">
+                <div class="col-lg-8 section-card">
+                    <div class="title">
+                        <h2>Contact? Gratis advies!</h2>
+                        <h5>Heeft u een vraag, bent u verdwaald
+                            <br>of heeft u een interessant project?</h5>
+                    </div>
+                    <div class="body">
+                        <p>
+                            <span class="contact-method">
+                                <img class="small-icon" src="img/icons/mail.svg" alt="Mobile device">
+                                <a href="#" class="display-text">info@Litepage.nl</a>
+                            </span>
+                            <span class="contact-method">
+                                Liever bellen?<a href="#" class="display-text" style="margin-left: 15px;">Bel mij terug!</a>
+                                <img class="small-icon" src="img/icons/phone.svg" alt="Mobile device">
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div id="contact-form-card" class="col-lg-8 section-card">
+                    <div class="body">
+                        <form>
+                            <div class="form-group input-material">
+                                <input type="text" class="form-control" id="name-field" aria-describedby="emailHelp" required>
+                                <label for="name-field">Naam</label>
+                            </div>
+                            <div class="form-group input-material">
+                                <input type="email" class="form-control" id="email-field" required>
+                                <label for="email-field">Email</label>
+                            </div>
+                            <div class="form-group input-material">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                            </div>
+                            <div class="text-center">
+                                <div class="display-text mb-3">Alles klaar?<br></div>
+                                <button type="submit" class="btn btn-primary">Verzend!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end -->
+
+        <footer>
+            <div class="credits text-center display-text">
+                <h4>Original Design by <img class="logo" src="img/branding/logo.png" alt="Litepage logo"></h4>
+                <p>ICONS KINDLY PROVIDED BY <a href="#">Almaz0tto</a></p>
+            </div>
+            <!-- nav -->
+            <nav>
+                <img class="logo" src="img/branding/logo.png" alt="Litepage logo">
+                <span class="copyright-notice display-text">Copyright <script type="text/javascript">thisYear()</script> - ALL RIGHTS RESERVED</span>
+                <ul class="menu">
+                    <li class="lang-item"><a href="#"><img src="img/icons/gb.png" alt="English Language"></a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Back to top</a></li>
+                </ul>
+            </nav>
+        </footer>
 
     </div>
 
@@ -172,6 +246,7 @@
     <script src="js/typed.min.js"></script>
 
     <script>
+
         $('document').ready(function(){
 
             $('.typing').each(function() {

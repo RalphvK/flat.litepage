@@ -1,0 +1,59 @@
+$footer-primary: #3e45f9;
+
+footer {
+    color: $white;
+    background-color: rgba(black, 0.7);
+    font-size: 0.9em;
+
+    a {
+        color: $footer-primary;
+        &:hover {
+            color: $footer-primary;
+        }
+    }
+    
+    .credits {
+        
+        padding-top: 300px;        
+        padding-bottom: 100px;
+        
+        h4 {
+            margin-bottom: 10px;
+            
+            img {
+                height: 1.5em;
+                margin-left: 0.4em;
+            }
+            
+        }
+        
+        p {
+            font-size: 0.8em;
+        }
+    }
+    
+    nav {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background: #111111;
+        color: rgba(white, 0.5);
+        line-height: 35px;
+        
+        img.logo {
+            opacity: 0.5;
+        }
+        
+        .copyright-notice {
+            font-size: 0.8em;
+        }
+        
+        ul.menu li a {
+            color: $footer-primary;
+            &:hover {
+                color: $footer-primary;
+            }
+        }
+        
+    }
+    
+}

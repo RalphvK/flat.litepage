@@ -69,6 +69,38 @@
     background-size: 100% 100%;
 }
 
-#features.card-section {
-    @include gradient(rgba(black,0), rgba($black, 0.2), vertical);
+#contact {
+    
+    @include gradient(rgba(black,0), rgba($black, 0.3), vertical);
+    
+    .container {
+        margin-bottom: -100px;
+    }
+    
+    .section-card:first-of-type {
+        padding-bottom: 1px;
+        
+        .body {
+            .contact-method {
+                display: block;
+                &:first-of-type {
+                    margin-bottom: 30px;    
+                }
+                &:last-of-type {
+                    text-align: right;
+                    .small-icon {
+                        margin-left: 15px;
+                        margin-right: 0px;
+                    }    
+                }
+            }
+        }
+        
+    }
+    
+    #contact-form-card {
+        background-color: $gray-blue;
+        padding-top: 50px;
+    }
+    
 }

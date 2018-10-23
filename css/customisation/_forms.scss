@@ -1,0 +1,42 @@
+.form-group.input-material {
+    
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    label {
+          color:#999; 
+          font-size:16px;
+          font-weight:normal;
+          position:absolute;
+          pointer-events:none;
+          left:5px;
+          top:7px;
+          transition:0.1s ease all; 
+          -moz-transition:0.1s ease all; 
+          -webkit-transition:0.1s ease all;
+    }
+
+    .form-control {
+        border-bottom: 2px solid $gray-400;
+        border-radius: 0px;
+        background: transparent;
+        padding-left: 5px;
+        box-shadow: none;
+        
+        &:focus, &:valid {
+            border-bottom-color: $primary;
+            color: $black;
+        }
+        
+        /* active state */
+        &:focus ~ label, &:valid ~ label {
+          top:-25px;
+          font-size:14px;
+          color: $primary;
+          font-weight: 500;
+        }
+
+    }
+    
+}
