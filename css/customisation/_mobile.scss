@@ -1,0 +1,99 @@
+@import "hamburgers/hamburgers";
+
+$mob-menu-transition-speed: 0.3s ease;
+$mob-menu-transition-speed-lagged: 0.5s ease;
+
+button.hamburger {
+    display: none;
+}
+
+@include media-breakpoint-down(sm) { 
+    
+    #navbar {
+        
+        img.logo {
+            z-index: 99;
+        }
+    
+        ul.menu {
+            display: block;
+            height: 0px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            @include linearGradient(rgba(black, 0.8), rgba(black, 0), to left, $stop1: 60%, $stop2: 100%);
+            top: 0px;
+            left: 0px;
+            padding: 0 0;
+            z-index: 88;
+            font-size: 0px;
+            opacity: 0;
+            transition: all $mob-menu-transition-speed;
+
+            li {
+                width: 100%;
+
+                a {
+                    position: relative;
+                    width: 100%;
+                    text-align: right;
+                    border-radius: 0px;
+                    transition: all $mob-menu-transition-speed;
+                    padding: 20px 60px;
+                    
+                    &:after {
+                        display: block;
+                        content:"";
+                        position: absolute;
+                        right: 60px;
+                        top: 50%;
+                        height: 3px;
+                        width: 0px;
+                        background-color: white;
+                        transition: all $mob-menu-transition-speed-lagged;
+                    }
+
+                    &:hover {
+                        color: white;
+                        padding-right: 200px !important;
+                        background: none;
+                        
+                        &:after {
+                            width: 100px !important;;
+                        }
+                        
+                    }
+                   
+
+                }
+
+            }
+            
+            &.is-active {
+                height: auto;
+                padding: 165px 0 400px 0;
+                opacity: 1;
+                font-size: 1.5em;
+                
+                li a {
+                    padding-right: 170px;
+                    &:after {
+                        width: 80px;
+                    }
+
+                }
+                
+            }
+
+        }
+    }
+    
+    button.hamburger {
+        display: block;
+        margin-left: auto;
+        position: relative;
+        z-index: 99;
+    }
+
+}

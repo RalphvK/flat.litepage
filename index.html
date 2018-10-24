@@ -25,7 +25,7 @@
     <div class="wrapper">
 
         <!-- nav -->
-        <nav>
+        <nav id="navbar">
             <img class="logo" src="img/branding/logo.png" alt="Litepage logo">
             <ul class="menu">
                 <li class="lang-item"><a href="#"><img src="img/icons/gb.png" alt="English Language"></a></li>
@@ -33,6 +33,11 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <button class="hamburger hamburger--spring" type="button" onclick="toggleMenu()">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </nav>
         
         <!-- hero start -->
@@ -246,6 +251,11 @@
     <script src="js/typed.min.js"></script>
 
     <script>
+
+        function toggleMenu() {
+            $('#navbar ul.menu').toggleClass('is-active');
+            $('#navbar .hamburger').toggleClass('is-active');
+        }
 
         $('document').ready(function(){
 

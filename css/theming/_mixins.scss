@@ -1,4 +1,4 @@
-@mixin linearGradient($top, $bottom, $direction: to bottom, $stop1: 0%, $stop2: 100%){
+@mixin linearGradient($top, $bottom, $direction: to bottom, $start: top, $stop1: 0%, $stop2: 100%){
     background: $top; /* Old browsers */
     background: -moz-linear-gradient(top,  $top $stop1, $bottom $stop2); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop($stop1,$top), color-stop($stop2,$bottom)); /* Chrome,Safari4+ */
