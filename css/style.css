@@ -6609,16 +6609,17 @@ body {
       font-weight: 500; }
 
 nav {
+  display: flex;
   line-height: 70px;
-  vertical-align: middle;
+  align-items: center;
   padding: 40px 30px 25px 30px; }
   nav img.logo {
     padding: 0 30px;
     height: 35px;
     display: inline-block; }
   nav ul.menu {
-    float: right;
-    display: inline-block; }
+    margin-left: auto;
+    margin-bottom: 0; }
     nav ul.menu li {
       display: inline-block;
       list-style: none; }

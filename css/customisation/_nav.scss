@@ -1,7 +1,8 @@
 nav {
     
+    display: flex;
     line-height: 70px;
-    vertical-align: middle;
+    align-items: center;
     padding: 40px 30px 25px 30px;
 
     img.logo {
@@ -11,8 +12,8 @@ nav {
     }
     
     ul.menu {
-        float: right;
-        display: inline-block;
+        margin-left: auto;
+        margin-bottom: 0;
         
         li {
             display: inline-block;
