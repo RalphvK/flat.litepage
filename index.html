@@ -271,12 +271,12 @@
                     contentType: 'html'
                 };
 
-                $(this).parent().css({
-                    'min-height': el.outerHeight() + 'px',
-                    'min-width': el.outerWidth() + 'px'
+                el.parent().css({
+                    'min-height': el.parent().outerHeight() + 'px',
+                    'min-width': el.parent().outerWidth() + 'px'
                 });
 
-                $(this).typed(options);
+                el.typed(options);
 
             });
 
