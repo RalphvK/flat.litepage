@@ -87,13 +87,36 @@ button.hamburger {
             }
 
         }
+        
+        button.hamburger {
+            display: block;
+            margin-left: auto;
+            position: relative;
+            z-index: 99;
+        }
+        
     }
     
-    button.hamburger {
+    section#hero {
+        padding: 0 0;
+    }
+
+    .card-section .section-card .body {
+        text-align: center;
+    }
+
+    footer nav {
         display: block;
-        margin-left: auto;
-        position: relative;
-        z-index: 99;
+        text-align: center;
+        
+        > * {
+            display: block;
+            margin: 30px auto;
+        }
+
+        ul.menu {
+            padding: 0 0;
+        }
     }
 
 }
