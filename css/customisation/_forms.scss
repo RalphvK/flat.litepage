@@ -24,19 +24,35 @@
         padding-left: 5px;
         box-shadow: none;
         
-        &:focus, &:valid {
+        /* active state */
+        &:focus, &[value]:not([value=""]) {
             border-bottom-color: $primary;
             color: $black;
         }
         
-        /* active state */
-        &:focus ~ label, &:valid ~ label {
+        &:focus ~ label, &[value]:not([value=""]) ~ label {
           top:-25px;
           font-size:14px;
           color: $primary;
           font-weight: 500;
         }
 
+        /* invalid state */
+        &:focus.parsley-error, &[value]:not([value=""]).parsley-error {
+            border-bottom-color: $danger;
+        }
+        
+        &:focus.parsley-error ~ label, &[value]:not([value=""]).parsley-error  ~ label {
+            color: $danger;
+        }
+
     }
     
+}
+
+.parsley-errors-list {
+    color: $danger;
+    list-style: none;
+    font-size: 0.7em;
+    padding-left: 5px;
 }

@@ -199,17 +199,17 @@
                 </div>
                 <div id="contact-form-card" class="col-lg-8 section-card">
                     <div class="body">
-                        <form>
+                        <form id="contact-form">
                             <div class="form-group input-material">
-                                <input type="text" class="form-control" id="name-field" required>
+                                <input type="text" class="form-control" id="name-field" data-parsley-trigger="change" data-parsley-minlength="2" data-parsley-maxlength="128" required>
                                 <label for="name-field">Naam</label>
                             </div>
                             <div class="form-group input-material">
-                                <input type="email" class="form-control" id="email-field" required>
+                                <input type="email" class="form-control" id="email-field" data-parsley-trigger="change" required>
                                 <label for="email-field">Email</label>
                             </div>
                             <div class="form-group input-material">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" data-parsley-trigger="change" data-parsley-maxlength="2000" required></textarea>
                                 <label for="exampleFormControlTextarea1">Uw bericht</label>
                             </div>
                             <div class="text-center">
@@ -254,21 +254,21 @@
             </div>
             <div class="modal-body">
                 <h6>And this is crazy!</h6>
-                <form>
+                <form id="call-form">
                     <div class="form-group input-material">
-                        <input type="text" class="form-control" id="name-field" required>
+                        <input type="text" class="form-control" id="name-field" data-parsley-trigger="change" data-parsley-minlength="2" data-parsley-maxlength="128" required>
                         <label for="name-field">Naam</label>
                     </div>
                     <div class="form-group input-material">
-                        <input type="email" class="form-control" id="email-field" required>
+                        <input type="email" class="form-control" id="email-field" data-parsley-trigger="change" required>
                         <label for="email-field">Email</label>
                     </div>
                     <div class="form-group input-material">
-                        <input type="tel" class="form-control" id="phone-field" required>
+                        <input type="tel" class="form-control" id="phone-field" data-parsley-trigger="change" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-minlength="10" data-parsley-maxlength="14" required>
                         <label for="phone-field">Telefoonnummer</label>
                     </div>
                     <div class="form-group input-material">
-                        <textarea class="form-control" id="note-field" rows="2" required></textarea>
+                        <textarea class="form-control" id="note-field" rows="2" data-parsley-trigger="change" data-parsley-maxlength="2000" required></textarea>
                         <label for="note-field">Waarover en wanneer wilt u gebeld worden?</label>
                     </div>
                     <div class="text-center">
@@ -291,6 +291,8 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js"></script>
     <script src="js/typed.min.js"></script>
+    <script src="js/parsley.min.js"></script>
+    <script src="js/parsley-nl.js"></script>
 
     <script>
 
@@ -328,6 +330,28 @@
                 el.typed(options);
 
             });
+
+            /**
+             * Input state (support for material style labels)
+             */
+            var formElementSelectors = "input, textarea";
+            function setInputValueAttr(element) {
+                element.setAttribute('value', element.value);
+            }
+            // set value attribute at page load
+            $(formElementSelectors).each(function () {
+                setInputValueAttr(this);
+            });
+            // eventhandler
+            $('body').on("keyup", formElementSelectors, function() {
+                setInputValueAttr(this);
+            });
+
+            /**
+             * Parsley
+             */
+            $('#call-form').parsley();
+            $('#contact-form').parsley();
 
             /**
              * Returns a random number between min (inclusive) and max (exclusive)
