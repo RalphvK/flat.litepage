@@ -1,0 +1,13 @@
+{
+    "includes": [
+        "./js/partials/materialize-inputs.js",
+        "./js/partials/vendor/parsley.min.js",
+        "./js/partials/vendor/parsley-nl.js",
+        "./js/partials/vendor/jquery.appear.min.js",
+        "./js/partials/typed.min.js",
+        "./js/partials/speed-streaks.js",
+        "./js/partials/vendor/anime.min.js",
+        "./js/partials/vendor/particles.min.js",
+        "./js/partials/**/*.js"
+    ]
+}
