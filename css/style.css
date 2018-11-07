@@ -6819,20 +6819,20 @@ section#hero {
   opacity: 0.5; }
   .scene .el {
     position: absolute;
-    right: -500px;
+    right: -1000px;
     height: 7px;
     background-color: rgba(7, 239, 218, 0.2);
     margin-top: 20px;
-    width: 500px;
+    width: 1000px;
     border-radius: 2em; }
     .scene .el.blue {
       background: #07efda;
       background: -webkit-linear-gradient(left, #07efda, rgba(7, 239, 218, 0));
       background: linear-gradient(to right, #07efda, rgba(7, 239, 218, 0)); }
     .scene .el.pink {
-      background: #f106b2;
-      background: -webkit-linear-gradient(left, #f106b2, rgba(241, 6, 178, 0));
-      background: linear-gradient(to right, #f106b2, rgba(241, 6, 178, 0)); }
+      background: white;
+      background: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0));
+      background: linear-gradient(to right, white, rgba(255, 255, 255, 0)); }
 
 #particles-js {
   position: absolute;

@@ -54,10 +54,10 @@ function initStreaks(selector, quantity) {
         // run animation
         var cssSelector = anime({
             targets: $(this)[0],
-            translateX: sceneWidth * -1 - 500,
+            translateX: sceneWidth * -1 - 2000,
             delay: values.delay,
             easing: 'linear',
-            duration: 500,
+            duration: 800,
             complete: function(anim) {
                 // set random pos again
                 values = setRandom(element, spread_y, spread_t);

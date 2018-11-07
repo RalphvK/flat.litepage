@@ -10,11 +10,11 @@
 
     .el {
         position: absolute;
-        right: -500px;
+        right: -2000px;
         height: 7px;
         background-color: rgba(#07EFDA, 0.2);
         margin-top: 20px;
-        width: 500px;
+        width: 2000px;
         border-radius: 2em;
         
         &.blue {
@@ -22,7 +22,7 @@
         }
         
         &.pink {
-        @include gradient(rgba(#F106B2, 1), rgba(#F106B2, 0));
+        @include gradient(rgba(#ffffff, 1), rgba(#ffffff, 0));
         }
         
     }
